@@ -1,0 +1,11 @@
+<div style="margin-left: 40vw; margin-right: 40vw; background-color: rgb(125, 218, 255); width: auto;">
+    <br><h2 style="text-align: center;">Add Notes : </h2>
+    Title : <input type="text" [(ngModel)]="title" style="width: 183px;"><br><br>
+    Desc : <input type="text" [(ngModel)]="description" style="height: 100px; width: 180px;"><br><br>
+    <button style="margin-left: 90px;" [disabled]="title.length==0 || description.length == 0"
+    (click)="addNotes()">Add Notes</button>
+</div>
+
+<!-- [] property Binding -->
+<!-- () eg : (click) -->
+<!-- [] + () = [(ngModel)]-->
